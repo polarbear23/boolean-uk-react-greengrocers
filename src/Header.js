@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Header = () => {
+import StoreItem from './StoreItem'
+const Header = (props) => {
   return (
     <header id="store">
       <h1>Greengrocers</h1>

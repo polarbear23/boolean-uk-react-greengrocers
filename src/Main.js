@@ -1,11 +1,15 @@
 import React from 'react'
-
-export default function main() {
+import CartItem from './CartItem'
+export default function main(props) {
   return (
     <main id="cart">
       <h2>Your Cart</h2>
       <div class="cart--item-list-container">
-        <ul class="item-list cart--item-list"></ul>
+        <ul class="item-list cart--item-list">
+          {props.cart.map((item) => (
+            <CartItem item={item} decreaseQuantity={props.decreaseQuantity} increaseQuantity={props.increaseQuantity} />
+          ))}
+        </ul>
       </div>
       <div class="total-section">
         <div>
