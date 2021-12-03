@@ -4,6 +4,7 @@ import Credits from './Credits'
 import Main from './Main'
 import Header from './Header'
 import data from './db.js'
+import { useState } from 'react'
 /*
 Here's what a store item should look like
 {
@@ -14,16 +15,17 @@ Here's what a store item should look like
 
 What should a cart item look like? 🤔
 */
-console.log(data.items);
-const initialStoreItems = "";
+console.log(data.items)
+const initialStoreItems = data.items
+const initalCartItems = data.cart
 
 export default function App() {
-  // Setup state here...
+  const [cartItems, setCartItems] = useState(initalCartItems)
 
   return (
     <>
-      <Header />
-      <Main />
+      <Header store={StoreItems} />
+      <Main cart={cartItems} />
       <Credits />
     </>
   )
