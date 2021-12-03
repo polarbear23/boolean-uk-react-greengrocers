@@ -3,7 +3,7 @@ import './styles/index.css'
 import Credits from './Credits'
 import Main from './Main'
 import Header from './Header'
-
+import data from './db.js'
 /*
 Here's what a store item should look like
 {
@@ -14,8 +14,8 @@ Here's what a store item should look like
 
 What should a cart item look like? 🤔
 */
-
-const initialStoreItems = []
+console.log(data.items);
+const initialStoreItems = "";
 
 export default function App() {
   // Setup state here...
