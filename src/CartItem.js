@@ -5,13 +5,13 @@ const CartItem = (props) => {
         <li>
             <img
                 class="cart--item-icon"
-                src={`/assets/icons/${props.id}.svg`}
-                alt={props.name}
+                src={`/assets/icons/${props.item.id}.svg`}
+                alt={props.item.name}
             />
-            <p>beetroot</p>
-            <button class="quantity-btn remove-btn center" onClick={(e) => props.decreaseQuantity}>-</button>
+            <p>{props.item.name}</p>
+            <button class="quantity-btn remove-btn center" onClick={(e) => props.decreaseQuantity(props.item)}>-</button>
             <span class="quantity-text center">{props.item.quantity}</span>
-            <button class="quantity-btn add-btn center" onClick={(e) => props.increaseQuantity}>+</button>
+            <button class="quantity-btn add-btn center" onClick={(e) => props.increaseQuantity(props.item)}>+</button>
         </li>
     )
 }

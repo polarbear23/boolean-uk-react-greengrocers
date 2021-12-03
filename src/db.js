@@ -51,7 +51,14 @@ const data = {
       "price": 0.35
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "010-eggplant",
+      "name": "eggplant",
+      "price": 0.35,
+      "quantity": 1
+    }
+  ]
 }
 
 export default data;
