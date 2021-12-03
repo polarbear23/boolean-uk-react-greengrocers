@@ -1,9 +1,9 @@
-{
-  "items": [
+const data = {
+  items: [
     {
       "id": "001-beetroot",
       "name": "beetroot",
-      "price": 0.35
+      "price": 0.35,
     },
     {
       "id": "002-carrot",
@@ -53,3 +53,5 @@
   ],
   "cart": []
 }
+
+export default data;
