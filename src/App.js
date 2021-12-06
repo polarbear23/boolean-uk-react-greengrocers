@@ -24,8 +24,8 @@ export default function App() {
 
   return (
     <>
-      <Header store={initialStoreItems} />
-      <Main cart={cartItems} setCartItems={setCartItems} />
+      <Header setCartItems={setCartItems} store={initialStoreItems} />
+      <Main cart={cartItems} />
       <Credits />
     </>
   )
