@@ -10,7 +10,7 @@ const Header = props => {
       <h1>Greengrocers</h1>
       <ul class="item-list store--item-list">
         {storeItems.map(item => {
-          return <StoreItem item={item} />
+          return <StoreItem item={item} setCartItems={props.setCartItems} cart={props.cart} />
         })}
       </ul>
     </header>

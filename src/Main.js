@@ -25,7 +25,7 @@ export default function main(props) {
       <div class="cart--item-list-container">
         <ul class="item-list cart--item-list">
           {props.cart.map((item) => (
-            <CartItem item={item} decreaseQuantity={decreaseQuantity} increaseQuantity={increaseQuantity} />
+            <CartItem cart={props.cart} setCartItems={props.setCartItems} item={item} decreaseQuantity={decreaseQuantity} increaseQuantity={increaseQuantity} />
           ))}
         </ul>
       </div>
